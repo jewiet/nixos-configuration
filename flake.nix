@@ -9,7 +9,10 @@
   outputs = inputs@{ self, nixpkgs, ... }: {
     # NOTE: 'nixos' is the default hostname
     nixosConfigurations.form-to-hel1 = nixpkgs.lib.nixosSystem {
-      modules = [ ./configuration.nix ];
+      modules = [
+        ./configuration.nix
+        ./form-to-mail.nix
+      ];
     };
   };
 }
