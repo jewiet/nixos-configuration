@@ -1,5 +1,7 @@
-{ config, lib, pkgs, ... }:
-
+{ config, lib, pkgs, inputs, ... }:
+let
+  form-to-mail = inputs.form-to-mail.packages.${pkgs.system}.default;
+in
 {
   users.users.form-to-mail = {
     isSystemUser = true;
@@ -12,7 +14,7 @@
   users.groups.form-to-mail = {};
 
   systemd.services.form-to-mail = {
-    script = "${pkgs.temurin-jre-bin}/bin/java -jar ~/form-to-mail-0.1.25-standalone.jar";
+    script = "${form-to-mail}/bin/form-to-mail";
     wantedBy = ["multi-user.target"];
     serviceConfig = {
       User = "form-to-mail";
