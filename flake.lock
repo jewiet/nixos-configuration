@@ -168,11 +168,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1761861933,
-        "narHash": "sha256-QPEJuiR1UqIWLstE8SezVILXRL6FifkhrLV0MDfprS0=",
+        "lastModified": 1762596753,
+        "narHash": "sha256-WyXi9EoWrnvB1bblVqzWqwbLUwCE0m1d4fmuZJ905yQ=",
         "owner": "jewiet",
         "repo": "form-to-mail",
-        "rev": "928184e3c3374a1e8d1c8b1dfa918f6af45e9038",
+        "rev": "6829faa86922d9df278d87dc9b6efb193404265a",
         "type": "github"
       },
       "original": {
