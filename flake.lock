@@ -36,6 +36,47 @@
         "type": "github"
       }
     },
+    "cachix_2": {
+      "inputs": {
+        "devenv": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv"
+        ],
+        "flake-compat": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "flake-compat"
+        ],
+        "git-hooks": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "git-hooks"
+        ],
+        "nixpkgs": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1760971495,
+        "narHash": "sha256-IwnNtbNVrlZIHh7h4Wz6VP0Furxg9Hh0ycighvL5cZc=",
+        "owner": "cachix",
+        "repo": "cachix",
+        "rev": "c5bfd933d1033672f51a863c47303fc0e093c2d2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "ref": "latest",
+        "repo": "cachix",
+        "type": "github"
+      }
+    },
     "clj-nix": {
       "inputs": {
         "devshell": "devshell",
@@ -82,6 +123,33 @@
         "type": "github"
       }
     },
+    "devenv_2": {
+      "inputs": {
+        "cachix": "cachix_2",
+        "flake-compat": "flake-compat_2",
+        "flake-parts": "flake-parts_3",
+        "git-hooks": "git-hooks_2",
+        "nix": "nix_2",
+        "nixpkgs": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762889687,
+        "narHash": "sha256-oKvHfeYDZ0LfuHSaFLA0w/dfZ9R6C5W8pCGUjUWawGI=",
+        "owner": "cachix",
+        "repo": "devenv",
+        "rev": "3b4fb549962342c928aae1bbea3a13f0eeed2703",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "repo": "devenv",
+        "type": "github"
+      }
+    },
     "devshell": {
       "inputs": {
         "nixpkgs": [
@@ -112,6 +180,22 @@
         "owner": "edolstra",
         "repo": "flake-compat",
         "rev": "9100a0f413b0c601e0533d1d94ffd501ce2e7885",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_2": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761588595,
+        "narHash": "sha256-XKUZz9zewJNUj46b4AJdiRZJAvSZ0Dqj2BNfXvFlJC4=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "f387cd2afec9419c8ee37694406ca490c3f34ee5",
         "type": "github"
       },
       "original": {
@@ -160,19 +244,43 @@
         "type": "github"
       }
     },
+    "flake-parts_3": {
+      "inputs": {
+        "nixpkgs-lib": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1760948891,
+        "narHash": "sha256-TmWcdiUUaWk8J4lpjzu4gCGxWY6/Ok7mOK4fIFfBuU4=",
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "rev": "864599284fc7c0ba6357ed89ed5e2cd5040f0c04",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "flake-parts",
+        "type": "github"
+      }
+    },
     "form-to-mail": {
       "inputs": {
         "clj-nix": "clj-nix",
         "devenv": "devenv",
         "nixpkgs": "nixpkgs_2",
-        "systems": "systems"
+        "systems": "systems",
+        "tad-better-behavior": "tad-better-behavior"
       },
       "locked": {
-        "lastModified": 1762627356,
-        "narHash": "sha256-yDIf+OzaeLAAndZJ04070JtraUZwfjCZI3/4/0S7HWw=",
+        "lastModified": 1764942238,
+        "narHash": "sha256-1JOlGt8wGolPPnsSNdDgP0C4s0pJS2sKV495mMdTF8M=",
         "owner": "jewiet",
         "repo": "form-to-mail",
-        "rev": "d4c7cfc7b3d046d7df19e9fd671bbea526a8bdf9",
+        "rev": "06a852bc47313c1e26dab0bb4df7f3a442f30c61",
         "type": "github"
       },
       "original": {
@@ -209,10 +317,64 @@
         "type": "github"
       }
     },
+    "git-hooks_2": {
+      "inputs": {
+        "flake-compat": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "flake-compat"
+        ],
+        "gitignore": "gitignore_2",
+        "nixpkgs": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1760663237,
+        "narHash": "sha256-BflA6U4AM1bzuRMR8QqzPXqh8sWVCNDzOdsxXEguJIc=",
+        "owner": "cachix",
+        "repo": "git-hooks.nix",
+        "rev": "ca5b894d3e3e151ffc1db040b6ce4dcc75d31c37",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "repo": "git-hooks.nix",
+        "type": "github"
+      }
+    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
           "form-to-mail",
+          "devenv",
+          "git-hooks",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1709087332,
+        "narHash": "sha256-HG2cCnktfHsKV0s4XW83gU3F57gaTljL9KNSuG6bnQs=",
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "rev": "637db329424fd7e46cf4185293b9cc8c88c95394",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
+    "gitignore_2": {
+      "inputs": {
+        "nixpkgs": [
+          "form-to-mail",
+          "tad-better-behavior",
           "devenv",
           "git-hooks",
           "nixpkgs"
@@ -301,6 +463,58 @@
         "type": "github"
       }
     },
+    "nix_2": {
+      "inputs": {
+        "flake-compat": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "flake-compat"
+        ],
+        "flake-parts": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "flake-parts"
+        ],
+        "git-hooks-nix": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "git-hooks"
+        ],
+        "nixpkgs": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv",
+          "nixpkgs"
+        ],
+        "nixpkgs-23-11": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv"
+        ],
+        "nixpkgs-regression": [
+          "form-to-mail",
+          "tad-better-behavior",
+          "devenv"
+        ]
+      },
+      "locked": {
+        "lastModified": 1761648602,
+        "narHash": "sha256-H97KSB/luq/aGobKRuHahOvT1r7C03BgB6D5HBZsbN8=",
+        "owner": "cachix",
+        "repo": "nix",
+        "rev": "3e5644da6830ef65f0a2f7ec22830c46285bfff6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "ref": "devenv-2.30.6",
+        "repo": "nix",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1749285348,
@@ -347,6 +561,22 @@
     },
     "nixpkgs_3": {
       "locked": {
+        "lastModified": 1761313199,
+        "narHash": "sha256-wCIACXbNtXAlwvQUo1Ed++loFALPjYUA3dpcUJiXO44=",
+        "owner": "cachix",
+        "repo": "devenv-nixpkgs",
+        "rev": "d1c30452ebecfc55185ae6d1c983c09da0c274ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cachix",
+        "ref": "rolling",
+        "repo": "devenv-nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_4": {
+      "locked": {
         "lastModified": 1761373498,
         "narHash": "sha256-Q/uhWNvd7V7k1H1ZPMy/vkx3F8C13ZcdrKjO7Jv7v0c=",
         "owner": "NixOS",
@@ -364,7 +594,7 @@
     "root": {
       "inputs": {
         "form-to-mail": "form-to-mail",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       }
     },
     "systems": {
@@ -380,6 +610,41 @@
         "owner": "nix-systems",
         "repo": "default",
         "type": "github"
+      }
+    },
+    "systems_2": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "tad-better-behavior": {
+      "inputs": {
+        "devenv": "devenv_2",
+        "nixpkgs": "nixpkgs_3",
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1764919789,
+        "narHash": "sha256-AxETEEs5xdXiGVJNvYQNwYphjFt9Dm867JbAHZXfQzg=",
+        "ref": "refs/heads/main",
+        "rev": "281b16d7215ecd7a2b2463ca66e70cca004f354d",
+        "revCount": 147,
+        "type": "git",
+        "url": "https://codeberg.org/tad-lispy/tad-better-behavior.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://codeberg.org/tad-lispy/tad-better-behavior.git"
       }
     }
   },
