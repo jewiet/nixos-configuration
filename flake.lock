@@ -276,11 +276,11 @@
         "tad-better-behavior": "tad-better-behavior"
       },
       "locked": {
-        "lastModified": 1772807624,
-        "narHash": "sha256-djDi6A2f3ksGyOTW2YM/+ZLbd792OfXjUoUV/YLWjLo=",
+        "lastModified": 1773834324,
+        "narHash": "sha256-12C23ZmFRqcT1wNbpcjtZaeeTnd9vEE9fBJzBTODRS0=",
         "owner": "jewiet",
         "repo": "form-to-mail",
-        "rev": "12fdc9458afe59c662b21e48c39d7d520eca8ee7",
+        "rev": "10479793e9ae1866ceb9919f96f278f1ff89d27b",
         "type": "github"
       },
       "original": {
@@ -634,11 +634,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1764919789,
-        "narHash": "sha256-AxETEEs5xdXiGVJNvYQNwYphjFt9Dm867JbAHZXfQzg=",
+        "lastModified": 1765443457,
+        "narHash": "sha256-Aey8gFz+Ox35oBCPx63jcne4897HCJJG9W+Shmoaydo=",
         "ref": "refs/heads/main",
-        "rev": "281b16d7215ecd7a2b2463ca66e70cca004f354d",
-        "revCount": 147,
+        "rev": "acdb99b084de91439599664c4976c0afd9d10b2a",
+        "revCount": 153,
         "type": "git",
         "url": "https://codeberg.org/tad-lispy/tad-better-behavior.git"
       },
