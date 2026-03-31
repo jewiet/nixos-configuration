@@ -1,6 +1,6 @@
 { config, lib, pkgs, inputs, ... }:
 let
-  form-to-mail = inputs.form-to-mail.packages.${pkgs.system}.default;
+  form-to-mail = inputs.form-to-mail.packages.${pkgs.system};
 in
 {
   users.users.form-to-mail = {
@@ -14,7 +14,7 @@ in
   users.groups.form-to-mail = {};
 
   systemd.services.form-to-mail = {
-    script = "${form-to-mail}/bin/form-to-mail ~/config.edn";
+    script = "${form-to-mail.default}/bin/form-to-mail ~/config.edn";
     wantedBy = ["multi-user.target"];
     serviceConfig = {
       User = "form-to-mail";
@@ -36,6 +36,11 @@ in
 
     virtualHosts = {
       "formtomail.eu" = {
+        enableACME = true;
+        forceSSL = true;
+        root = "${form-to-mail.website}/www/";
+      };
+      "use.formtomail.eu" = {
         enableACME = true;
         forceSSL = true;
         locations."/".proxyPass = "http://localhost:4242";

@@ -8,7 +8,6 @@
     form-to-mail.url = "github:jewiet/form-to-mail";
   };
   outputs = inputs@{ self, nixpkgs, ... }: {
-    # NOTE: 'nixos' is the default hostname
     nixosConfigurations.form-to-hel1 = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
