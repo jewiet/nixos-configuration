@@ -534,11 +534,11 @@
         "tad-better-behavior": "tad-better-behavior"
       },
       "locked": {
-        "lastModified": 1778968691,
-        "narHash": "sha256-myxzlvwf7xfcMaHOzawvzv8cj8lnhYefkfhA/qMJI/M=",
+        "lastModified": 1779228701,
+        "narHash": "sha256-YZENqw0ZffZIAHCdl7E66qjmGTPGso6yuHtOaEa0fBk=",
         "owner": "jewiet",
         "repo": "form-to-mail",
-        "rev": "72ba4d092f81712dd48d894bc1e336e7831b5a67",
+        "rev": "704f7074da2508a370780ffd8077a0a212a9bd32",
         "type": "github"
       },
       "original": {
